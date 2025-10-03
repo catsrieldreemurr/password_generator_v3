@@ -7,7 +7,7 @@ const MontserratFont = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: "Catsriel's Better Password Generator",
+  title: "Catsriel's Password Generator v.3",
   description: "Password",
 };
 
