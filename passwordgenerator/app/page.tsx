@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Navbar from "./components/navbar";
 import Footerbar from "./components/footerbar";
 import Header from "./components/header";
@@ -63,6 +64,13 @@ export default function Home() {
             <Text> <b> - Standard Passwords should be 20 or more Characters. (Default is 20)</b> </Text>
             <Text> <b> - Readable Passwords should be 6 or more Words (Default is 6)</b> </Text>
           </div>
+
+          <Subheader>Links and Credits</Subheader>
+          <div className="text-left">
+            <Text> - Created by <Link className="text-red-200" href="https://Youtube.com/@CatsrielDreemurr">@CatsrielDreemurr</Link> </Text>
+            <Text> - Version 2 (OLD) - <Link className="text-red-200" href="https://catsrieldreemurr.github.io/CatsrielsPasswordGenerator/index.html">Link</Link></Text>
+          </div>
+
 
         </InfoBox>
       </section>
