@@ -49,7 +49,21 @@ export default function Home() {
         </InfoBox>
 
         <InfoBox>
-          <Subheader>Guides</Subheader>
+          <Subheader>Defaults, Limits and Recommendations</Subheader>
+          <Text>The Generators has a couple of Limitations:</Text>
+
+          <div className="m-10 text-left">
+            <Text> <b> - Standard-Generator has a Maximum of 200 Characters</b> </Text>
+            <Text> <b> - Readable-Generator has a Maximum of 20 Words</b> </Text>
+          </div>
+
+          <Text>Recommendations:</Text>
+
+          <div className="m-10 text-left">
+            <Text> <b> - Standard Passwords should be 20 or more Characters. (Default is 20)</b> </Text>
+            <Text> <b> - Readable Passwords should be 6 or more Words (Default is 6)</b> </Text>
+          </div>
+
         </InfoBox>
       </section>
 
