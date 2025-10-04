@@ -9,7 +9,7 @@ import InfoBox from "./components/infobox";
 
 export default function Home() {
   return (
-    <div className="bg-cyan-900 bg-cover flex flex-col">
+    <div className="bg-cyan-900 bg-cover flex flex-col wrap-break-word">
       <Navbar></Navbar>
 
       <div className="flex flex-1 flex-col justify-center items-center text-center min-h-screen">
