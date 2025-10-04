@@ -2,8 +2,14 @@ import Footerbar from "../components/footerbar";
 import Navbar from "../components/navbar"
 import Optionbox from "../components/option";
 import Subheader from "../components/subheader";
+import { useState} from "react";
 
 function GeneratePasswords(){
+    const [options, setOptions] = useState({
+        readablePasswords: false,
+        
+    })
+
     return(
     <section className="bg-cyan-900 h-screen bg-cover">
         <Navbar></Navbar>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { types } from "util";
 import Text from "./text";
+import Subheader from "./subheader";
 
 type optionChildren = {
    variant: string,
@@ -16,8 +17,6 @@ function Optionbox({variant, optionText}: optionChildren){
             setValue(!value)
             console.log(value);
         }
-        
-        const [value, setValue] = useState(false)
         return(
             <div className="flex p-5 items-center gap-5">
                 {value ? 
@@ -25,6 +24,7 @@ function Optionbox({variant, optionText}: optionChildren){
                 : 
                 <button className="bg-red-800 p-6 pt-3 pb-3 rounded-xl border" onClick={onClickFunc}>Disabled</button>}
                 <Text>{optionText}</Text>
+
             </div>
         )
     }
