@@ -9,25 +9,12 @@ type optionChildren = {
    variant: string,
    optionText:string,
    
+   value: boolean,
+   setValue: React.Dispatch<React.SetStateAction<number>>;
 }
 
-function Optionbox({variant, optionText}: optionChildren){
-    if(variant === "bool"){
-        function onClickFunc(){
-            setValue(!value)
-            console.log(value);
-        }
-        return(
-            <div className="flex p-5 items-center gap-5">
-                {value ? 
-                <button className="bg-green-400 p-6 pt-3 pb-3 rounded-xl border" onClick={onClickFunc}>Enabled</button> 
-                : 
-                <button className="bg-red-800 p-6 pt-3 pb-3 rounded-xl border" onClick={onClickFunc}>Disabled</button>}
-                <Text>{optionText}</Text>
-
-            </div>
-        )
-    }
+function Optionbox({variant, optionText, value, setValue}: optionChildren){
+    
 }
 
 export default Optionbox;
